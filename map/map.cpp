@@ -57,4 +57,63 @@ int main(){
 	cout << "-----------------------------"<<endl;
 	m.insert(p);
 	cout << "-----------------------------"<<endl;
+	m.insert(make_pair(3,A(3)));
+	cout << "-----------------------------"<<endl;
 }
+/*
+ * -----------------------------
+ *  user_defined
+ *  0x7fff2ef11460
+ *  default constructor
+ *  0x7fff2ef113e0
+ *  A copy constructor val is10
+ *  cp 0x7fff2ef113e0 to 0x7fff2ef113d4
+ *  A copy constructor val is10
+ *  cp 0x7fff2ef113d4 to 0x1cb6c44
+ *  delete val is 10
+ *  0x7fff2ef113d4
+ *  delete val is 10
+ *  0x7fff2ef113e0
+ *  A assign constructor val is1
+ *  cp 0x7fff2ef11460 to 0x1cb6c44
+ *  delete val is 1
+ *  0x7fff2ef11460
+ *  -----------------------------
+ *  user_defined
+ *  0x7fff2ef11470
+ *  A copy constructor val is2
+ *  cp 0x7fff2ef11470 to 0x7fff2ef11424
+ *  delete val is 2
+ *  0x7fff2ef11470
+ *  -----------------------------
+ *  A copy constructor val is2
+ *  cp 0x7fff2ef11424 to 0x7fff2ef11484
+ *  A copy constructor val is2
+ *  cp 0x7fff2ef11484 to 0x1cb6c74
+ *  delete val is 2
+ *  0x7fff2ef11484
+ *  -----------------------------
+ *  user_defined
+ *  0x7fff2ef114b0
+ *  A copy constructor val is3
+ *  cp 0x7fff2ef114b0 to 0x7fff2ef114a4
+ *  A copy constructor val is3
+ *  cp 0x7fff2ef114a4 to 0x7fff2ef11494
+ *  A copy constructor val is3
+ *  cp 0x7fff2ef11494 to 0x1cb6ca4
+ *  delete val is 3
+ *  0x7fff2ef11494
+ *  delete val is 3
+ *  0x7fff2ef114a4
+ *  delete val is 3
+ *  0x7fff2ef114b0
+ *  -----------------------------
+ *  delete val is 2
+ *  0x7fff2ef11424
+ *  delete val is 3
+ *  0x1cb6ca4
+ *  delete val is 2
+ *  0x1cb6c74
+ *  delete val is 1
+ *  0x1cb6c44
+ */
